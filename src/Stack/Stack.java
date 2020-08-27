@@ -27,6 +27,17 @@ public class Stack {
         return nextIndex;
     }
 
+    public void print(){
+        for( int i = 0 ; i < stack.length; i++ ){
+            if( i == nextIndex ){
+                System.out.println( stack[i] + "<<<" );
+            }else{
+                System.out.println( stack[i] );
+            }
+
+        }
+    }
+
     public static void main( String[] args ) {
         Stack s = new Stack(10);
 
